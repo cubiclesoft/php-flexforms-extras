@@ -14,7 +14,9 @@ Features
 * Multiselect dropdown support.  Adds a jQuery UI widget for selecting multiple items.
 * Multiselect flat view support.  Adds a jQuery UI widget for selecting and reordering multiple items.
 * Table row ordering.  Adds drag-and-drop support to an injected column for the 'table' type.
-* Table sticky headers.  Adds sticky header support to the header for the 'table' type.
+* Table cards.  Adds responsive layout support for the 'table' type via client-side templates to convert tables into formatted cards in a new table column so each row fits on a single screen horizontally.
+* Table scrolling.  Adds scrolling of a table body to fit an entire table onto a single screen vertically.
+* Table sticky headers.  Adds sticky header support to the header for the 'table' type.  Buggy on mobile OS platforms (e.g. Android Google Chrome).
 * Has a liberal open source license.  MIT or LGPL, your choice.
 * Designed for relatively painless integration into your project.
 * Sits on GitHub for all of that pull request and issue tracker goodness to easily submit changes and ideas respectively.
@@ -44,6 +46,14 @@ New type-specific options for array fields:
 * order (table) - A string to display as the column header for the drag-and-drop column.
 * order_options (table) - An array of options to pass to [TableDnD](https://github.com/isocra/TableDnD).
 * order_callbacks (table) - An array of Javascript callbacks to pass to [TableDnD](https://github.com/isocra/TableDnD).
+* card (table) - A string or an array of options to pass to [TableCards](https://github.com/cubiclesoft/jquery-tablecards).
+* cardwidth (table) - An integer representing the number of pixels the width of the table has to fall below before switching to card mode.  The default is to switch to card mode if the table exceeds its parent element.
+* cardhead (table) - A string containing the table header field to display.  The default is to hide all headers.
+* card_options (table) - An array of options to pass to [TableCards](https://github.com/cubiclesoft/jquery-tablecards).
+* card_callbacks (table) - An array of Javascript callbacks to pass to [TableCards](https://github.com/cubiclesoft/jquery-tablecards).
+* bodyscroll (table) - A boolean that indicates whether or not to enable responsive table body scrolling.
+* bodyscroll_options (table) - An array of options to pass to [TableBodyScroll](https://github.com/cubiclesoft/jquery-tablebodyscroll).
+* bodyscroll_callbacks (table) - An array of Javascript callbacks to pass to [TableBodyScroll](https://github.com/cubiclesoft/jquery-tablebodyscroll).
 * stickyheader (table) - A boolean that indicates whether or not to use sticky table headers.
 * stickyheader_options (table) - An array of options to pass to [StickyTableHeaders](https://github.com/jmosbech/StickyTableHeaders).
 * stickyheader_callbacks (table) - An array of Javascript callbacks to pass to [StickyTableHeaders](https://github.com/jmosbech/StickyTableHeaders).
