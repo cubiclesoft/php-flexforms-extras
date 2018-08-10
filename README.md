@@ -5,6 +5,8 @@ FlexForms Extras adds the most commonly used best-of-class Javascript components
 
 [FlexForms](https://github.com/cubiclesoft/php-flexforms) is the culmination of seven years of precision software development boiled down into a little over 1,200 lines of code ready for your next web application.  The core functionality is trusted and has been deployed widely throughout the world.  FlexForms Extras expands upon FlexForms with the most commonly used Javascript components used to bring administrative interfaces to life such as [Admin Pack](https://github.com/cubiclesoft/admin-pack).
 
+[![Donate](https://cubiclesoft.com/res/donate-shield.png)](https://cubiclesoft.com/donate/)
+
 Features
 --------
 
